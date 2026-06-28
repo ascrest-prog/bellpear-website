@@ -374,6 +374,88 @@
     .work-title { font-weight: 700; color: white; margin-bottom: 0.4rem; }
     .work-meta { font-size: 0.82rem; color: #94A3B8; }
 
+    /* ===== THREADS ===== */
+    .threads { background: var(--gray-bg); }
+
+    .threads-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .threads-card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-left: 4px solid var(--yellow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .threads-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+
+    .threads-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .threads-avatar {
+      width: 40px; height: 40px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--yellow);
+      font-family: 'Yusei Magic', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .threads-handle { font-size: 0.85rem; font-weight: 700; color: var(--navy); }
+    .threads-date { font-size: 0.75rem; color: var(--text-light); }
+
+    .threads-card-body {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .threads-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .threads-link {
+      font-size: 0.82rem;
+      color: var(--yellow-dark);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .threads-link:hover { color: var(--black); }
+
+    .threads-follow-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--yellow);
+      color: var(--black);
+      padding: 0.6rem 1.6rem;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 2px solid var(--black);
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 2rem;
+    }
+    .threads-follow-btn:hover { background: var(--yellow-dark); transform: translateY(-1px); }
+
     /* ===== CONTACT ===== */
     .contact { background: var(--yellow-light); }
 
@@ -515,6 +597,7 @@
     <a href="#about">会社情報</a>
     <a href="#services">サービス</a>
     <a href="#works">施工事例</a>
+    <a href="#threads">最新情報</a>
     <a href="#contact" class="btn-cta">無料お見積もり</a>
   </nav>
 </header>
@@ -689,6 +772,82 @@
   </div>
 </section>
 
+<!-- THREADS -->
+<section class="threads" id="threads">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-label">Threads</div>
+      <h2 class="section-title">最新情報</h2>
+      <p class="section-desc">Threadsで現場の様子やお知らせを発信しています。</p>
+    </div>
+    <div class="threads-grid fade-in">
+      <div class="threads-card">
+        <div class="threads-card-header">
+          <div class="threads-avatar">BP</div>
+          <div>
+            <div class="threads-handle">@gk.bellpear</div>
+            <div class="threads-date">2026年5月7日</div>
+          </div>
+        </div>
+        <div class="threads-card-body">
+          同業の解体屋さんに質問です！木造住宅の解体で、手壊しと重機の割合ってどうしてますか？🏠 うちは躯体を残して、ボード・アルミサッシ・屋根材・外壁材を手壊ししてから重機で解体しています。産廃コストも気になるところ…。元請さん・応援のお仕事も大募集中です！
+        </div>
+        <div class="threads-card-footer">
+          <a href="https://www.threads.com/@gk.bellpear/post/DYCdYPMkwX2" target="_blank" rel="noopener" class="threads-link">Threadsで見る →</a>
+        </div>
+      </div>
+      <div class="threads-card">
+        <div class="threads-card-header">
+          <div class="threads-avatar">BP</div>
+          <div>
+            <div class="threads-handle">@gk.bellpear</div>
+            <div class="threads-date">2026年5月7日</div>
+          </div>
+        </div>
+        <div class="threads-card-body">
+          忙しいあまり、更新をサボってました😅 内装解体・部分解体・スケルトン工事を得意としています！元請さん・応援のお仕事を募集中。東京・千葉エリアを中心に対応。無料お見積もり＆土日対応もOKです💪
+        </div>
+        <div class="threads-card-footer">
+          <a href="https://www.threads.com/@gk.bellpear/post/DYCTCygExJr" target="_blank" rel="noopener" class="threads-link">Threadsで見る →</a>
+        </div>
+      </div>
+      <div class="threads-card">
+        <div class="threads-card-header">
+          <div class="threads-avatar">BP</div>
+          <div>
+            <div class="threads-handle">@gk.bellpear</div>
+            <div class="threads-date">2026年3月26日</div>
+          </div>
+        </div>
+        <div class="threads-card-body">
+          3月は病院・工場の解体や造園のお仕事で忙しくさせていただきました🏗️ 4月のお仕事もお待ちしております！丁寧かつ効率的な作業を心がけています。元請さん・応援・個人のお客様、お気軽にお問い合わせください。
+        </div>
+        <div class="threads-card-footer">
+          <a href="https://www.threads.com/@gk.bellpear/post/DWX0Yr7EzyO" target="_blank" rel="noopener" class="threads-link">Threadsで見る →</a>
+        </div>
+      </div>
+      <div class="threads-card">
+        <div class="threads-card-header">
+          <div class="threads-avatar">BP</div>
+          <div>
+            <div class="threads-handle">@gk.bellpear</div>
+            <div class="threads-date">2026年3月13日</div>
+          </div>
+        </div>
+        <div class="threads-card-body">
+          仕事もプライベートも充実させたい！会社を成長させながら、メンバーとその家族が幸せになれる職場を作るのが目標です。内装解体を中心に、東京・千葉エリアで元請さん・応援・個人のお客様を募集中です🔨
+        </div>
+        <div class="threads-card-footer">
+          <a href="https://www.threads.com/@gk.bellpear/post/DV0yPBok-Zx" target="_blank" rel="noopener" class="threads-link">Threadsで見る →</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center;" class="fade-in">
+      <a href="https://www.threads.com/@gk.bellpear" target="_blank" rel="noopener" class="threads-follow-btn">📱 Threadsをフォローする</a>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="section-inner">
@@ -762,6 +921,7 @@
     <a href="#about">会社情報</a>
     <a href="#services">サービス</a>
     <a href="#works">施工事例</a>
+    <a href="#threads">最新情報</a>
     <a href="#contact">お問い合わせ</a>
     <a href="#">プライバシーポリシー</a>
   </nav>
